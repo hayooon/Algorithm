@@ -21,15 +21,16 @@ def timeConversion(s):
 
     #AM
     if (s[8:] =="AM"):
-        return s[0:-2]
-    #PM
-    else:
         if (hour == "12"):
             hour = "00"
-        else:
-          hour = str(int(hour)+12)
 
-        return hour+rest        
+    #PM
+    else:
+        if (hour != "12"):
+            hour = str(int(hour)+12)
+
+    
+    return hour+rest        
 
 s = "06:40:03AM"
 print(timeConversion(s))
