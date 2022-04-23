@@ -1,3 +1,4 @@
+# <곱하기 혹은 더하기>
 num = []
 text = input()
 for i in range (len(text)):

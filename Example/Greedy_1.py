@@ -1,6 +1,4 @@
-from curses import KEY_LEFT
-
-
+# <1이 될 때까지>
 N, K = map(int, input().split())
 
 count = 0
