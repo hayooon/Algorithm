@@ -1,9 +1,5 @@
 # < 회의실 배정 >
 
-import re
-from turtle import st
-
-
 n = int(input())
 meeting = []
 for i in range (n):
@@ -11,8 +7,6 @@ for i in range (n):
 
 meeting.sort(key = lambda x: x[0])
 meeting.sort(key = lambda x: x[1])
-
-print(meeting)
 
 count = 0
 finish = 0
